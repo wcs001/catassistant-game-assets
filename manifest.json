@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "_note": "字段结构示例。game 列表以最终选品为准；art/audio 内为相对路径，加载失败时 app 回退内置兜底素材。",
+  "games": {
+    "game2048": { "name": "2048", "art": {}, "audio": {} },
+    "minesweeper": { "name": "扫雷", "art": {}, "audio": {} },
+    "memory": { "name": "记忆翻牌", "art": {}, "audio": {} },
+    "whackamole": { "name": "打地鼠", "art": {}, "audio": {} },
+    "snake": { "name": "贪吃蛇", "art": {}, "audio": {} },
+    "blocks": { "name": "方块", "art": {}, "audio": {} },
+    "tictactoe": { "name": "井字棋", "art": {}, "audio": {} },
+    "gomoku": { "name": "五子连珠", "art": {}, "audio": {} }
+  }
+}
