@@ -1,15 +1,15 @@
 {
-  "version": 1,
-  "_note": "game 列表为 v1 最终选品。art/audio 内为相对路径，加载失败时 app 回退内置兜底素材。",
+  "version": 2,
+  "_note": "v1 终版选品 + 音效素材。art/audio 值为相对本仓库的路径；音频为代码合成（/tmp/gen_sfx.py 生成，无版权负担）。加载失败时 app 回退内置兜底。",
   "games": {
-    "game2048": { "name": "2048", "category": "益智", "art": {}, "audio": {} },
-    "minesweeper": { "name": "扫雷", "category": "益智", "art": {}, "audio": {} },
-    "sudoku": { "name": "数独", "category": "益智", "art": {}, "audio": {} },
-    "memory": { "name": "记忆翻牌", "category": "休闲", "art": {}, "audio": {} },
-    "whackamole": { "name": "打地鼠", "category": "休闲", "art": {}, "audio": {} },
-    "snake": { "name": "贪吃蛇", "category": "街机", "art": {}, "audio": {} },
-    "blockblast": { "name": "方块消除", "category": "街机", "art": {}, "audio": {} },
-    "tictactoe": { "name": "井字棋", "category": "棋牌", "art": {}, "audio": {} },
-    "gomoku": { "name": "五子连珠", "category": "棋牌", "art": {}, "audio": {} }
+    "game2048": { "name": "2048", "category": "益智", "art": {}, "audio": { "merge": "assets/shared/audio/pop.wav" } },
+    "minesweeper": { "name": "扫雷", "category": "益智", "art": {}, "audio": { "win": "assets/shared/audio/win.wav", "lose": "assets/shared/audio/lose.wav" } },
+    "sudoku": { "name": "数独", "category": "益智", "art": {}, "audio": { "win": "assets/shared/audio/win.wav" } },
+    "memory": { "name": "记忆翻牌", "category": "休闲", "art": {}, "audio": { "match": "assets/shared/audio/match.wav" } },
+    "whackamole": { "name": "打地鼠", "category": "休闲", "art": {}, "audio": { "hit": "assets/shared/audio/hit.wav" } },
+    "snake": { "name": "贪吃蛇", "category": "街机", "art": {}, "audio": { "eat": "assets/shared/audio/eat.wav" } },
+    "blockblast": { "name": "方块消除", "category": "街机", "art": {}, "audio": { "clear": "assets/shared/audio/clear.wav" } },
+    "tictactoe": { "name": "井字棋", "category": "棋牌", "art": {}, "audio": { "place": "assets/shared/audio/tick.wav", "win": "assets/shared/audio/win.wav", "lose": "assets/shared/audio/lose.wav" } },
+    "gomoku": { "name": "五子连珠", "category": "棋牌", "art": {}, "audio": { "place": "assets/shared/audio/tick.wav", "win": "assets/shared/audio/win.wav" } }
   }
 }
